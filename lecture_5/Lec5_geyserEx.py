@@ -6,7 +6,10 @@
 # -----------------------------
 import Lec5_geyserEx_functions as h
 import matplotlib.pyplot as plt
-
+julianday, evclass = h.read_snuffler_marker ('markers.txt', length=0)
+julianday= np.sort (julianday)
+plt.plot (julianday)
+plt.show ()
 
 # -- import the snuffler marker file, time in julian days --
 h.read_snuffler_marker
